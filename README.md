@@ -57,6 +57,19 @@ https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/62a9236e-7984-468c-
 ![LabelPrint](https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/7929c475-1270-4cb6-8b73-9765a8e764b5)
 
 ### 4. TreeView (ObservableCollection) 
+    public class MenuItem
+    {
+        public MenuItem()
+        {
+            this.Items = new ObservableCollection<MenuItem>();
+        }
+    
+        public string Title { get; set; }
+    
+        public ObservableCollection<MenuItem> Items { get; set; }
+    }
+
+https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/d5dfdfed-6911-43cf-951a-e9ca8c49fb23
 
 
 # 💬 느낀점
