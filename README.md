@@ -28,11 +28,15 @@
 ### 2. UserControl
 <p>$\bf{\rm{\color{#5ad7b7}2.1\ Textbox}}$</p>
 - 규격코드 등록에서 새로운 제품을 등록하거나 수정할때 생산성을 입력할때
+
 1. 천자리가 넘어가면 ','가 생겨야함
 2. 소수점은 3자리 고정
 3. 정수 부분을 입력하고 오른쪽 화살표 키를 누르면 소수자리로 이동
 4. 정수 자리수는 8자리가 최대
+
 - 이 조건을 모두 충족하기 위해서 따로 UserControl로 Textbox를 구현했습니다.
+
+        <local:DotTextboxUserControl x:Name="Capacity_TextBox" Height="20" Margin="462,344,84,14" />
 
 https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/107f37f2-8adc-4359-8109-49e77921bd77
 
@@ -68,6 +72,10 @@ https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/62a9236e-7984-468c-
     
         public ObservableCollection<MenuItem> Items { get; set; }
     }
+
+### 5. Delegate (DataPassEventHandler) 
+
+    pcs.DataPassProdCd += new ProdClassSystem.DataPassProdCdEventHandler(ProdCdReceiveData);
 
 https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/d5dfdfed-6911-43cf-951a-e9ca8c49fb23
 
