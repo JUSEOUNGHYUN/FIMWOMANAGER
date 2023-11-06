@@ -3,7 +3,7 @@
 
 
 # 📌 개요
-- 벽산영동공장에서 생산품을 생산할때 컴퓨터 응용프로그램으로 생산품의 생산일정, 규격, 기간, 종류를 날짜 순으로 사용자가 보기 쉽게 WPF DataGrid(표)로 만들어 사용자가 생산계획표을 쉽게 생성,삭제,수정 할 수있도록 구현했습니다.
+- 벽산영동공장에서 생산품을 생산할때 컴퓨터 응용프로그램으로 생산품의 생산일정, 규격, 기간, 종류를 날짜 순으로 사용자가 보기 쉽게 WPF DataGrid(표)로 만들어 사용자가 UI에서 생산계획표을 쉽게 생성,삭제,수정 할 수있도록 구현했습니다.
 
 # 🛠️ 기술 및 도구
 <img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=C Sharp&logoColor=white"/> <img src="https://img.shields.io/badge/Microsoft SQL Server-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white"/> <img src="https://img.shields.io/badge/WPF-40AEF0?style=flat-square&logo=WPF&logoColor=white"/>
