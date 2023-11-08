@@ -9,7 +9,7 @@
 <img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=C Sharp&logoColor=white"/> <img src="https://img.shields.io/badge/Microsoft SQL Server-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white"/> <img src="https://img.shields.io/badge/WPF-40AEF0?style=flat-square&logo=WPF&logoColor=white"/>
 
 # 🎏 기능 구현
-- DataGrid Data Binding(MSSQL DB)
+- DataGrid Data Binding(MSSQL DB) (MVVM 패턴 적용)
 - UserControl(Textbox, DatePicker, TimePicker)
 - DataGridTemplateColumn.CellEditingTemplate (조회된 DataGrid에서 Remark를 UI에서 직접 수정 가능하고 수정된 데이터가 DB에 저장되는 기능 구현)
 - LabelPrint 출력
