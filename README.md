@@ -19,6 +19,7 @@
 - delegate (DataPassEventHandler)
 - Queue LogMessage로 로그 기록 
 - MSSQL Table 분석 후, Data Trigger 관리
+- DB DataTrigger, Stored Procedure 구현
 
 ### 1. 기본 화면
 - 2023.05.15 ~ 2023.05.21에 생산 대기중,생산중,생산완료된 제품들을 DataGrid에 출력
