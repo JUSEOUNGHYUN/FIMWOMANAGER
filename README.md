@@ -1,26 +1,3 @@
-# 📛 벽산영동공장 자동화 프로그램
-📍 프로젝트 기간 : 2023.05.17 ~ 2023.08.04 (3개월)
-
-
-# 📌 개요
-- 벽산영동공장에서 생산품을 생산할때 컴퓨터 응용프로그램으로 생산품의 생산일정, 규격, 기간, 종류를 날짜 순으로 사용자가 보기 쉽게 WPF DataGrid(표)로 만들어 사용자가 UI에서 생산계획표을 쉽게 생성,삭제,수정 할 수있도록 구현했습니다.
-
-# 🛠️ 기술 및 도구
-<img src="https://img.shields.io/badge/C Sharp-239120?style=flat-square&logo=C Sharp&logoColor=white"/> <img src="https://img.shields.io/badge/Microsoft SQL Server-CC2927?style=flat-square&logo=Microsoft SQL Server&logoColor=white"/> <img src="https://img.shields.io/badge/WPF-40AEF0?style=flat-square&logo=WPF&logoColor=white"/>
-
-# 🎏 기능 구현
-- DataGrid Data Binding(MSSQL DB) (MVVM 패턴 적용)
-- UserControl(Textbox, DatePicker, TimePicker)
-- DataGridTemplateColumn.CellEditingTemplate (조회된 DataGrid에서 Remark를 UI에서 직접 수정 가능하고 수정된 데이터가 DB에 저장되는 기능 구현)
-- LabelPrint 출력
-- DataGrid에 출력된 데이터들을 엑셀에 데이터를 옮기고 저장 (Microsoft.Office.Interop.Excel)
-- App.Config Key Data에 따라 Administrator 등급 결정 (AppSettingsReader, WindowsIdentity, ProcessStartInfo)
-- TreeView (ObservableCollection)
-- delegate (DataPassEventHandler)
-- Queue LogMessage로 로그 기록 
-- MSSQL Table 분석 후, Data Trigger 관리
-- DB DataTrigger, Stored Procedure 구현
-
 ### 1. 기본 화면
 - 2023.05.15 ~ 2023.05.21에 생산 대기중,생산중,생산완료된 제품들을 DataGrid에 출력
 
@@ -79,9 +56,3 @@ https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/62a9236e-7984-468c-
     pcs.DataPassProdCd += new ProdClassSystem.DataPassProdCdEventHandler(ProdCdReceiveData);
 
 https://github.com/JUSEOUNGHYUN/JUSEOUNGHYUN/assets/80812790/d5dfdfed-6911-43cf-951a-e9ca8c49fb23
-
-
-# 💬 느낀점
-- MFC, Winform에서 UI를 개발할때 버튼이나, TextBox 등등 마우스로 생성하고 일일히 정렬 했어야 됐는데 WPF xaml을 사용함으로써 UI의 디자인의 퀄리티가 높아졌고 UI 개발할때 더 쉽게 개발을 할수 있다는걸 알게됐습니다.
-- 그리고 일부 테이블의 데이터를 수정하거나, 생성할때 다른 테이블의 데이터가 생성돼었는데 
-여기서 Database의 Trigger에 대한 개념과 사용법을 알게됐습니다.
